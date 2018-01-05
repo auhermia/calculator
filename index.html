@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="JavaScript.js" type="text/javascript"></script>
+    <title></title>
+
+</head>
+
+<body>
+    <div class="menu">
+        <!-- =============== CALCULATOR =============== -->
+        <div id="calculator">
+            <div class="maindisplay">
+                <div id="topdisplay"></div>
+                <div id="bottomdisplay"></div>
+            </div>
+            <div class="row">
+                <button id="clear">C</button>
+                <button class="operator" id="sqrt">&#8730</button>
+                <!--<button class="operator">&#960</button> pi-->
+                <button class="operator" id="expo">^</button>
+                <button class="operator">&#247</button>
+            </div>
+            <div class="row">
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button class="operator">&#215</button>
+            </div>
+            <div class="row">
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="operator">-</button>
+            </div>
+            <div class="row">
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="operator">+</button>
+            </div>
+            <div class="row">
+                <button class="num">0</button>
+                <button class="num" id="decimal">.</button>
+                <button class="operator" id="signop">&#177</button>
+                <button class="operator" id="equal">=</button>
+            </div>
+        </div>
+        <!-- =============== UNIT CONVERTER =============== -->
+        <div class="converter" id="converter">
+            <select id="type">
+                <option id="0">Length</option>
+                <option id="1">Mass</option>
+                <option id="2">Temperature</option>
+                <option id="3">Time</option>
+                <option id="4">Volume</option>
+            </select>
+            <!-- From -->
+            <p>Enter unit to convert from:</p>
+            <input type="text" id="from"/>
+            <select id="fromUnit"></select>
+            <!-- To -->
+            <p>Enter unit to convert to:</p>
+            <input type="text" id="to" />
+            <select id="toUnit"></select>
+            <button id="convert_equal">Convert</button>
+        </div>
+        <button id="calcbutton">Calculator</button>
+        <button id="convertbutton">Unit Conversion</button>
+
+    </div>
+</body>
+
+</html>
